@@ -1,3 +1,3 @@
 # Python_project
 
-In this project use request life cyle
+In this project use request life cyle and middleware
