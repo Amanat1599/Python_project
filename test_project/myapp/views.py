@@ -5,5 +5,6 @@ from django.http import HttpResponse
 #     print("Hellow world")
 
 
-# def members(request):
-#     return HttpResponse("Hello world!")
+def membersapp(request):
+    print('Print in view in it')
+    return HttpResponse("IN View")
