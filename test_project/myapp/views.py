@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
 # class members():
 #     print("Hellow world")
@@ -21,5 +22,7 @@ def ExceptionView(request):
 def TemplateView(request):
     print('Print in Template view in it')
     context={"name":"My_name"}
-   
-    return HttpResponse("IN Template View")
+    return TemplateResponse(request,"index.html",context)
+
+# def TemplateResponse(request):
+#     print('In templateResponse : ')

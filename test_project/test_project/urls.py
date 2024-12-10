@@ -26,4 +26,5 @@ urlpatterns = [
     #path('members/', views.members, name='members'),
     path("myapp/",views.membersapp),
     path("exception/",views.ExceptionView),
+    path("template/",views.TemplateView)
 ]
