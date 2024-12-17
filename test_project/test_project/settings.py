@@ -37,23 +37,24 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "myapp"
+    "myapp",
+    "jinjatemplate"
 ]
 
 MIDDLEWARE = [
     
-    # "django.middleware.security.SecurityMiddleware",
+    "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    # "django.middleware.common.CommonMiddleware",
-    # "django.middleware.csrf.CsrfViewMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
-    # "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "middleware.main.FirstMiddleware",
-    "middleware.main.ExampleMiddleware",
-    # "middleware.main.MyProcessMiddleware",
-    "middleware.main.MyExceptionMiddleware",
-    "middleware.main.MyTemplateMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    # "middleware.main.FirstMiddleware",
+    # "middleware.main.ExampleMiddleware",
+    # # "middleware.main.MyProcessMiddleware",
+    # "middleware.main.MyExceptionMiddleware",
+    # "middleware.main.MyTemplateMiddleware",
 ]
 
 ROOT_URLCONF = "test_project.urls"
@@ -61,7 +62,7 @@ ROOT_URLCONF = "test_project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
