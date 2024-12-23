@@ -23,7 +23,8 @@ from myapp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     #path("myapp/",include('myapp.urls'))
-    #path('members/', views.members, name='members'),
+    path('members/', views.members, name='members'),
+    path(' ', views.members, name='members'),
     path("myapp/",views.membersapp),
     path("exception/",views.ExceptionView),
     path("template/",views.TemplateView),
