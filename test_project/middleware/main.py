@@ -14,6 +14,7 @@ class ExampleMiddleware:
 
         response = self.get_response(request)
         print("This is Example after view")
+        print("Example after")
        
 
         return response
