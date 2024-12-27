@@ -51,8 +51,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "middleware.main.FirstMiddleware",
-    # "middleware.main.ExampleMiddleware",
-    # # "middleware.main.MyProcessMiddleware",
+    "middleware.main.ExampleMiddleware",
+    "middleware.main.MyProcessMiddleware",
     "middleware.main.MyExceptionMiddleware",
     # "middleware.main.MyTemplateMiddleware",
 ]

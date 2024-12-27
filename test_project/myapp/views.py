@@ -21,7 +21,7 @@ def ExceptionView(request):
 
 def TemplateView(request):
     print('Print in Template view in it')
-    context={"name":"My_name"}
+    context={"name":"Update_name"}
     return TemplateResponse(request,"index.html",context)
 
 # def TemplateResponse(request):
